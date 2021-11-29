@@ -1,0 +1,18 @@
+<div class="post card text-center">
+  <div class="title card-header">
+    User: {{user.username}}
+  </div>
+
+  <div class="card-body">
+    <h5 class="card-title"> {{title}}</h5>
+    <p class="card-text">{{content}}</p>
+    
+    <a href="/post/{{id}}" class="btn btn-secondary">
+      {{comments.length}} {{format_plural "comment" comments.length}}
+    </a>
+  </div>
+
+  <div class="card-footer text-muted">
+    Written on {{format_date created_at}}
+  </div>
+</div>

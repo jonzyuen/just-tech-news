@@ -1,0 +1,17 @@
+<div class='post card text-center'>
+  <div class='title card-header'>
+    <h4>Comments</h4>
+  </div>
+</div>
+
+<div class='post card text-center'>
+  {{#each this}}
+  <div class='card-footer text-muted'>
+    {{user.username}} on {{format_date created_at}}
+  </div>
+  
+  <div class='card-body'>
+    <p class='card-text'>{{comment_text}}</p>
+  </div>
+  {{/each}}
+</div>
