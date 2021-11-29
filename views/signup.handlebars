@@ -1,0 +1,50 @@
+<div class="signup-form">
+  <form action="/examples/actions/confirmation.php" method="post">
+    <h2>Sign Up</h2>
+    <p>Fill this form to create an account</p>
+
+    <hr>
+
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <span class="fa fa-user"></span>
+          </span>
+        </div>
+
+        <input type="text" id="username-signup" class="form-control" name="username" placeholder="Username" required="required">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fa fa-paper-plane"></i>
+          </span>
+        </div>
+        <input type="email" id="email-signup" class="form-control" name="email" placeholder="Email Address" required="required">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fa fa-lock"></i>
+          </span>
+        </div>
+        <input type="password" class="form-control" id="password-signup" name="password" placeholder="Password" required="required">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-secondary btn-lg">Sign Up</button>
+    </div>
+  </form>
+  
+  <div class="text-center">Already have an account? <a href="/login">Login here</a></div>
+</div>
+
+<script src="/javascript/signup.js"></script>
